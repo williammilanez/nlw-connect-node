@@ -55,18 +55,6 @@ json
 
 ## aula01
 
-npm init -y
-npm i fastify
-npm i tsx typescript @types/node -D
-npx tsc --init (obs.: usar o tsc config para cada versão do node)
-npx tsx src/server.ts 
-npm run dev
-npm i @fastifycors
-npm i zod
-npm i fastify-type-provider-zod
-npm i @fastify/swagger @fastify/swagger-ui
-npm i @biomejs/biome -D
-
 ### npm init -y
 Inicializa um novo projeto Node.js, criando um arquivo package.json com as configurações padrão. O -y aceita automaticamente as configurações padrão sem perguntar ao usuário.
 
@@ -140,15 +128,30 @@ Esses comandos são para configurar um projeto utilizando Fastify com TypeScript
 
 ## aula02
 
-npm i ioredis
-npm i postgres drizzle-orm
-npm i drizzle-kit -D
+### npm i ioredis
+Instala ioredis, uma biblioteca para interagir com Redis no Node.js.
+
+### npm i postgres drizzle-orm
+- postgres: Cliente PostgreSQL para conectar e executar consultas.
+- drizzle-orm: ORM para manipular bancos SQL com TypeScript.
+
+### npm i drizzle-kit -D
+Instala o drizzle-kit como dependência de desenvolvimento, usado para gerar e aplicar migrações no banco de dados.
 
 ---
 
 ## aula03
 
-npm i tsup -D
-npm run build
-node dist/server.mjs
-node --env-file .env dist/server.njs
+### npm i tsup -D
+Instala tsup, uma ferramenta para empacotar e compilar código TypeScript.
+
+### npm run build
+Executa o script de build definido no package.json, geralmente compilando o código TypeScript para JavaScript.
+
+### node dist/server.mjs
+Executa o arquivo server.mjs compilado dentro da pasta dist.
+
+### node --env-file .env dist/server.njs
+Executa o servidor carregando variáveis de ambiente do arquivo .env.
+
+Isso configura um ambiente com PostgreSQL e Redis, utilizando Drizzle ORM para banco de dados e Tsup para compilar o código TypeScript.
