@@ -89,7 +89,7 @@ Instala os plugins Swagger e Swagger UI para Fastify, permitindo gerar documenta
 ### npm i @biomejs/biome -D
 Instala Biome (uma ferramenta de linting e formatação de código) como dependência de desenvolvimento. Ele ajuda a manter o código limpo e formatado conforme padrões definidos.
 
-Esses comandos são para configurar um projeto utilizando Fastify com TypeScript, Zod para validação de dados, Swagger para documentação de API, CORS para compartilhar recursos entre diferentes origens, e Biome para formatação e linting de código.
+## Esses comandos são para configurar um projeto utilizando Fastify com TypeScript, Zod para validação de dados, Swagger para documentação de API, CORS para compartilhar recursos entre diferentes origens, e Biome para formatação e linting de código.
 
 ## configuração do arquivo biome
 {
@@ -154,4 +154,4 @@ Executa o arquivo server.mjs compilado dentro da pasta dist.
 ### node --env-file .env dist/server.njs
 Executa o servidor carregando variáveis de ambiente do arquivo .env.
 
-Isso configura um ambiente com PostgreSQL e Redis, utilizando Drizzle ORM para banco de dados e Tsup para compilar o código TypeScript.
+## Isso configura um ambiente com PostgreSQL e Redis, utilizando Drizzle ORM para banco de dados e Tsup para compilar o código TypeScript.
